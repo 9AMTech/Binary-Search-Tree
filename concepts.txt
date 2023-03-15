@@ -1,0 +1,55 @@
+Merge Sort
+
+An algorithm typically made with two functions
+    Merge
+        - A function that starts with two inputs, like two arrays
+            Inputs - Left Array and Right Array
+
+        - We will make a little placeholder array for the sorted values
+        - We want to build a recursive function that will keep splitting and sorting the values of arrays.
+        - If array length is < 2, then we just return the array.
+        - If the first value of the left array is less than the right array, move from the left array into placeholder array
+        - Or do the vice versa with right array.
+        - Then we return the sorted array, the left array, and the right array with spread operators
+
+    Merge Sort    
+        - A function that starts with one input, one array
+        - make a variable called left and splice it up to the half point of the first array
+        - return merge(mergeSort(left),mergeSort(splicedArray));
+
+Binary Search Tree
+
+- it' a tree object consisting of node objects stemming from the root
+    - Node object is initialized with a value and has 3 properties
+        - value
+        - left
+        - right
+
+    - Tree Object typically has two properties and many methods
+        - properties 
+            - root
+            - count
+        
+        - methods
+            - insert
+                - this function takes an input of a new value
+                - create a currentNode variable and set it equal to the root.
+                - create function traverse
+                    - compare the currentNode to the new value
+                        - if it's smaller we go left
+                            - check if there is a left node, if there isn't this is the new leaf
+                            - if there is a left node, the left node becomes the 
+                              currentNode then we call traverse on it again
+
+                        -Do the vice versa for right node
+            - min
+                - this function creates a temporary storage var called currentNode
+                - while theres a left node, keep setting the left node to be the currentNode
+                - return the node value at the end
+            - max
+                - do the same as min but vice versa
+            - contains
+                - 
+            - dfsInOrder
+            - dfsPreOrder
+            - dfsPostOrder
